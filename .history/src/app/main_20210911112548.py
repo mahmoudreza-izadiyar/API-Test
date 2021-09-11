@@ -3,6 +3,6 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get("/PUT")
+@app.get("/ping")
 def pong():
-    return {"congrat": "HELLO WIPRO"}
+    return {"ping": "pong!"}
