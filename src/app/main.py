@@ -4,5 +4,5 @@ app = FastAPI()
 
 
 @app.get("/PUT")
-def pong():
+def Nice():
     return {"Message": "Hello wipro , This is a start to create a api"}
