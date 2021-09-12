@@ -21,6 +21,6 @@ services:
       - POSTGRES_USER=hello_fastapi
       - POSTGRES_PASSWORD=hello_fastapi
       - POSTGRES_DB=hello_fastapi_dev
-
+# to store data beyond the container life
 volumes:
   postgres_data:
