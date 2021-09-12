@@ -10,7 +10,7 @@ services:
     ports:
       - 8002:8000
     environment:
-      - DATABASE_URL=postgresql://hello_fastapi:hello_fastapi@db/hello_fastapi_dev
+      - DATABASE_URL=postgresql://wipro:wipro1234@db/wipro_db
   db:
     image: postgres:13-alpine
     volumes:
@@ -18,9 +18,9 @@ services:
     expose:
       - 5432
     environment:
-      - POSTGRES_USER=hello_fastapi
-      - POSTGRES_PASSWORD=hello_fastapi
-      - POSTGRES_DB=hello_fastapi_dev
+      - POSTGRES_USER=wipro
+      - POSTGRES_PASSWORD=wipro1234
+      - POSTGRES_DB=wipro_db
 # to store data beyond the container life
 volumes:
   postgres_data:
