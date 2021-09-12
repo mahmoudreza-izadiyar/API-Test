@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
+from app.api import put
+
 app = FastAPI()
 
 
-@app.get("/PUT")
-def Nice():
-    return {"Message": "Hello wipro , This is a start to create a api"}
+app.include_router(put.router)
